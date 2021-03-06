@@ -1,0 +1,7 @@
+.element__group{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.element__group:hover{
+    opacity: 0.6;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="pages/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesto</title>
+</head>
+
+<body class="body">
+
+    <section class="popup">
+            <div class="popup__container">
+                <img class="popup__close-icon" src="images/close-icon.svg" alt="Не получислось загрузить картинку">
+                <p class="popup__title">Редактировать профиль</p>
+                <input class="popup__username" type="text" placeholder="Имя" value="Жак-Ив Кусто"></input>
+                <div class="popup__line"></div>
+                <input class="popup__himself" type="text" placeholder="Кем являетесь" value="Исследователь океана"></input>
+                <div class="popup__line"></div>
+                <p class="popup__button">Сохранить</p>
+            </div>
+        </section>
+
+    <div class="page">
+
+        <header class="header">
+            <img class="header__logo" src="images/logo.svg" alt="Не получислось загрузить картинку">
+            <div class="header__line"></div>
+        </header>
+
+        <section class="profile">
+            <img class="profile__avatar" src="images/avatar.jpg" alt="Не получислось загрузить картинку">
+            <div class="profile__intro">
+                <p class="profile__username">Жак-Ив Кусто</p>
+                <img class="profile__edit-button" src="images/edit-button.svg" alt="Не получислось загрузить картинку">
+                <p class="profile__himself">Исследователь океана</p>
+            </div>
+            <img class="profile__add-button" src="images/add-button.svg" alt="Не получислось загрузить картинку">
+        </section>
+
+        <section class="elements">
+            <div class="element">
+                <img class="element__image" src="images/element(1).jpg" alt="Не получислось загрузить картинку">
+                <p class="element__text">Карачаевск<img class="element__group" id="group1" src="images/group.svg" alt="Не получислось загрузить картинку"></p>
+            </div>
+            
+            <div class="element">
+                <img class="element__image" src="images/element(2).png" alt="Не получислось загрузить картинку">
+                <p class="element__text">Гора Эльбрус<img class="element__group" id="group2" src="images/group.svg" alt="Не получислось загрузить картинку"></p>
+            </div>
+            
+            <div class="element">
+                <img class="element__image" src="images/element(3).png" alt="Не получислось загрузить картинку">
+                <p class="element__text">Домбай<img class="element__group" id="group3" src="images/group.svg" alt="Не получислось загрузить картинку"></p>
+            </div>
+            
+            <div class="element">
+                <img class="element__image" src="images/element(4).png" alt="Не получислось загрузить картинку">
+                <p class="element__text">Гора Эльбрус<img class="element__group" id="group4" src="images/group.svg" alt="Не получислось загрузить картинку"></p>
+            </div>
+            
+            <div class="element">
+                <img class="element__image" src="images/element(5).png" alt="Не получислось загрузить картинку">
+                <p class="element__text">Домбай<img class="element__group" id="group5" src="images/group.svg" alt="Не получислось загрузить картинку"></p>
+            </div>
+            
+            <div class="element">
+                <img class="element__image" src="images/element(6).png" alt="Не получислось загрузить картинку">
+                <p class="element__text">Карачаево-Ч...<img class="element__group" id="group6" src="images/group.svg" alt="Не получислось загрузить картинку"></p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p class="footer__text">© 2020 Mesto Russia</p>
+        </footer>
+
+    </div>
+    <script src="index.js"></script>
+</body>
