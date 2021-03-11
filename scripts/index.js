@@ -4,13 +4,9 @@ let popup = document.querySelector(".popup");
 let popupCloseIcon = popup.querySelector(".popup__close-icon");
 let popupUsername = popup.querySelector(".popup__entry_username");
 let popupHimself = popup.querySelector(".popup__entry_himself");
-let popupButton = popup.querySelector(".popup__button");
 let popupContainer = popup.querySelector(".popup__container");
 let profileUsername = page.querySelector(".profile__username");
 let profileHimself = page.querySelector(".profile__himself");
-
-popupUsername.value = "Жак-Ив Кусто";
-popupHimself.value = "Исследователь океана";
 
 function popupOpened(){
     popupUsername.value = profileUsername.textContent;
@@ -22,7 +18,8 @@ function popupClose(){
 }
 profileEditButton.addEventListener("click", popupOpened);
 popupCloseIcon.addEventListener("click", popupClose);
-function saveData(){
+function saveData(e){
+    e.preventDefault();
     profileUsername.textContent = popupUsername.value;
     profileHimself.textContent = popupHimself.value;
     popup.classList.remove("popup_opened");
