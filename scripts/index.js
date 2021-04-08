@@ -4,14 +4,14 @@ let profileAddButtonWrapper = page.querySelector(".profile__add-button-wrapper")
 
 let popupProfile = document.querySelector(".popup_profile");
 let popupProfileCloseIcon = popupProfile.querySelector(".popup__close-icon_profile");
-let popupProfileUsername = popupProfile.querySelector(".popup__entry_username-profile");
-let popupProfileHimself = popupProfile.querySelector(".popup__entry_himself-profile");
+let popupProfileUsername = popupProfile.querySelector(".popup__username-profile");
+let popupProfileHimself = popupProfile.querySelector(".popup__himself-profile");
 let popupProfileContainer = popupProfile.querySelector(".popup__container_profile");
 
 let popupPlaces = document.querySelector(".popup_places");
 let popupPlacesCloseIcon = popupPlaces.querySelector(".popup__close-icon_places");
-let popupPlacesName = popupPlaces.querySelector(".popup__entry_name-places");
-let popupPlacesLink = popupPlaces.querySelector(".popup__entry_link-places");
+let popupPlacesName = popupPlaces.querySelector(".popup__name-places");
+let popupPlacesLink = popupPlaces.querySelector(".popup__link-places");
 let popupPlacesContainer = popupPlaces.querySelector(".popup__container_places");
 
 let profileUsername = page.querySelector(".profile__username");
