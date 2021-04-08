@@ -1,0 +1,7 @@
+@keyframes popdown{
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+.popup_animation{
+    animation: popdown 0.2s 1 linear;
+}
