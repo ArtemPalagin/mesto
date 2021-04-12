@@ -40,6 +40,8 @@ const imagePopupCloseIcon = document.querySelector(".image-popup__close-icon");
 
 const popupClosed = document.querySelector(".popup_closed");
 
+const cardTemplate = document.querySelector("#card-template").content;
+
 function openModal(modal) {
   modal.classList.remove("popup_closed");
   modal.classList.add("popup_opened");
@@ -79,9 +81,8 @@ imagePopupCloseIcon.addEventListener("click", function () {
 });
 
 function createPlaces(link, name) {
-  const cardTemplate = document.querySelector("#card-template").content;
   const cardTemplateClone = cardTemplate.cloneNode(true);
-  let imgurl = `url(${link})`;
+  const imgurl = `url(${link})`;
   const elementImage = cardTemplateClone.querySelector(".element__image");
   elementImage.style.backgroundImage = imgurl;
   cardTemplateClone.querySelector(".element__text").textContent = name;
@@ -100,7 +101,7 @@ function createPlaces(link, name) {
   });
 
   delelteButton.addEventListener("click", function (e) {
-    e.target.parentElement.parentElement.remove();
+    e.target.closest(".element").remove();
   });
 
   elementImage.addEventListener("click", function (e) {
