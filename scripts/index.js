@@ -42,8 +42,9 @@ const popupClosed = document.querySelector(".popup_closed");
 
 const cardTemplate = document.querySelector("#card-template").content;
 
-function ESC(evt){
-  if (evt.keyCode === 27){
+function closeWithESC(evt){
+  const escKeyCode = 27;
+  if (evt.keyCode === escKeyCode){
     closeModal(document.querySelector(".popup_opened"));
   }
 }
@@ -51,12 +52,12 @@ function ESC(evt){
 function openModal(modal) {
   modal.classList.remove("popup_closed");
   modal.classList.add("popup_opened");
-  document.addEventListener("keydown", ESC);
+  document.addEventListener("keydown", closeWithESC);
 }
 function closeModal(modal) {
   modal.classList.remove("popup_opened");
   modal.classList.add("popup_closed");
-  document.removeEventListener("keydown", ESC);
+  document.removeEventListener("keydown", closeWithESC);
 }
 
 profileEditButton.addEventListener("click", function () {
@@ -101,11 +102,7 @@ function createPlaces(link, name) {
   const elementGroup = cardTemplateClone.querySelector(".element__group");
 
   elementGroup.addEventListener("click", function (e) {
-    if (e.target.classList.contains("element__group_black")) {
-      e.target.classList.remove("element__group_black");
-    } else {
-      e.target.classList.add("element__group_black");
-    }
+    e.target.classList.toggle("element__group_black");
   });
 
   delelteButton.addEventListener("click", function (e) {
