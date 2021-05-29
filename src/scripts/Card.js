@@ -43,7 +43,7 @@ export class Card {
         image.style.backgroundImage = this._imgurl;
         this._element.querySelector(".element__text").textContent = this._name;
         for(let i = 0; i < this._likesNum; i++){
-            if(this._likes[i]._id == "this._myCardId"){
+            if(this._likes[i]._id == this._myCardId){
                 this._element.querySelector(".element__group").classList.add("element__group_black");
                 i = this._likesNum;
             }
